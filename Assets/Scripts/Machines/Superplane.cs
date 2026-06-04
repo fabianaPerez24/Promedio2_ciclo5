@@ -2,6 +2,14 @@ using UnityEngine;
 
 public class Superplane : Entity
 {
+    private enum State
+    {
+        Patrol,
+        Attack
+    }
+
+    private State currentState;
+
     [SerializeField] private Transform baseToProtect;
 
     [SerializeField] private float patrolRadius = 5f;
@@ -29,6 +37,24 @@ public class Superplane : Entity
     }
     private void Update()
     {
+        float distance = Vector3.Distance(transform.position, player.position);
+
+        if (distance <= detectionRadius)
+            currentState = State.Attack;
+        else
+            currentState = State.Patrol;
+
+        if (currentState == State.Patrol)
+        {
+            PatrolMovement();
+        }
+        else if (currentState == State.Attack)
+        {
+            AttackPlayer();
+        }
+    }
+    private void PatrolMovement()
+    {
         transform.position = Vector3.MoveTowards(
             transform.position,
             patrolPoint,
@@ -38,32 +64,24 @@ public class Superplane : Entity
         {
             PatrolArea();
         }
+    }
+    private void AttackPlayer()
+    {
+        Vector3 direction = player.position - transform.position;
+        direction.y = 0;
 
-        float distance = Vector3.Distance(
-            transform.position,
-            player.position);
-
-        if (distance <= patrolRadius)
+        if (direction != Vector3.zero)
         {
-            Vector3 direction = player.position - transform.position;
-            direction.y = 0;
-
-            if (direction != Vector3.zero)
-            {
-                transform.forward = direction.normalized;
-            }
-
-            if (Time.time >= nextFireTime)
-            {
-                Shoot();
-                nextFireTime = Time.time + fireRate;
-            }
+            transform.forward = direction.normalized;
         }
-        if (distance <= detectionRadius)
+
+        if (Time.time >= nextFireTime)
         {
             Shoot();
+            nextFireTime = Time.time + fireRate;
         }
     }
+
     private void Shoot()
     {
         Instantiate(

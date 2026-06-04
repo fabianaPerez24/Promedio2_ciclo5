@@ -15,5 +15,4 @@ public class EnemyBullets : Bullets
             Destroy(gameObject);
         }
     }
-
 }

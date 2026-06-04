@@ -974,7 +974,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 29cb9bc7efbd1b843b269a01c782a35e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::AIShop
-  tankPrefab: {fileID: 5843994983349988565, guid: 67b42fab1eb5c4441a5d69a58ac93d55, type: 3}
+  tankPrefab: {fileID: 578607277}
   spawnPoint: {fileID: 133244316}
 --- !u!1 &832575517
 GameObject:
@@ -2231,7 +2231,7 @@ Transform:
   m_GameObject: {fileID: 1985309237}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.44, z: -6.12}
+  m_LocalPosition: {x: 0, y: 0.44, z: -27.07}
   m_LocalScale: {x: 20.64613, y: 1, z: 2.6400714}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2381,7 +2381,7 @@ PrefabInstance:
       objectReference: {fileID: 1985309241}
     - target: {fileID: 832490397459193414, guid: 67b42fab1eb5c4441a5d69a58ac93d55, type: 3}
       propertyPath: fireRate
-      value: 14
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 1762475494930658866, guid: 67b42fab1eb5c4441a5d69a58ac93d55, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2505,7 +2505,7 @@ PrefabInstance:
       objectReference: {fileID: 813220946107805369}
     - target: {fileID: 7309759668200046441, guid: a191991f19ea47b48866ed1836564cd9, type: 3}
       propertyPath: fireRate
-      value: 6
+      value: 4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2537,7 +2537,7 @@ PrefabInstance:
       objectReference: {fileID: 8936431265142403453, guid: 35c1c5120ba6a7445ac1d6bab42e7e93, type: 3}
     - target: {fileID: 2692455567451589683, guid: d5fef763807b56d4e9caf247fedfc765, type: 3}
       propertyPath: patrolRadius
-      value: 5.73
+      value: 5.76
       objectReference: {fileID: 0}
     - target: {fileID: 2692455567451589683, guid: d5fef763807b56d4e9caf247fedfc765, type: 3}
       propertyPath: baseToProtect
@@ -2701,7 +2701,7 @@ PrefabInstance:
       objectReference: {fileID: 813220946107805369}
     - target: {fileID: 3881480644237232264, guid: 29002dab1dcb046499097ad016bf6765, type: 3}
       propertyPath: fireRate
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 5104880959187295073, guid: 29002dab1dcb046499097ad016bf6765, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2757,7 +2757,7 @@ PrefabInstance:
       objectReference: {fileID: 8936431265142403453, guid: 35c1c5120ba6a7445ac1d6bab42e7e93, type: 3}
     - target: {fileID: 5415989708851341059, guid: 29002dab1dcb046499097ad016bf6765, type: 3}
       propertyPath: patrolRadius
-      value: 5.73
+      value: 5.76
       objectReference: {fileID: 0}
     - target: {fileID: 5415989708851341059, guid: 29002dab1dcb046499097ad016bf6765, type: 3}
       propertyPath: baseToProtect

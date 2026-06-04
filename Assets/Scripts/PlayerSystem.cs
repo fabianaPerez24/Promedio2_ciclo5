@@ -72,7 +72,11 @@ public class PlayerSystem : Entity, IShoot
         if (other.CompareTag("EnemyFortress"))
         {
             GetComponent<ChangeScenes>();
-            SceneManager.LoadScene("Victoria");
+            SceneManager.LoadScene("Victory");
+        }
+        if (other.CompareTag("Enemy"))
+        {
+            TakeDamage(5);
         }
     }
 

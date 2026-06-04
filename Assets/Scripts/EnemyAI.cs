@@ -9,7 +9,7 @@ public class EnemyAI : MonoBehaviour
     [SerializeField] private float speed = 3f;
     [SerializeField] private Transform player;
     [SerializeField] private Transform firePoint;
-    [SerializeField] private float fireRate = 1f;
+    [SerializeField] private float fireRate = 5f;
     private float nextFireTime;
 
     private void Update()
