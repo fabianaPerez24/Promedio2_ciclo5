@@ -11,7 +11,7 @@ public class AIShop : MonoBehaviour
     {
         timer += Time.deltaTime;
 
-        if (timer >= 10f)
+        if (timer >= 15f)
         {
             BuyTank();
             timer = 0;
