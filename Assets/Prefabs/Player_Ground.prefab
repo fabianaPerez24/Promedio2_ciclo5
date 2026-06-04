@@ -191,5 +191,5 @@ MonoBehaviour:
   firePoint: {fileID: 8754677035505521704}
   fireRate: 0.2
   currentMode: 0
-  walkerModel: {fileID: 3979908448037329764}
-  vehicleModel: {fileID: 3979908448037329764, guid: 76a9ed37eab3af943bee7dd766b9be4b, type: 3}
+  walkerModel: {fileID: 0}
+  vehicleModel: {fileID: 0}

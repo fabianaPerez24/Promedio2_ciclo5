@@ -3,8 +3,8 @@ using UnityEngine.SceneManagement;
 
 public class Tank : Entity
 {
-    [SerializeField] private Transform enemyBase;
-    [SerializeField] private float speed = 3f;
+    [SerializeField] public Transform enemyBase;
+    [SerializeField] public  float speed = 3f;
 
     private void Update()
     {
